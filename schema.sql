@@ -13,6 +13,7 @@ create table buildings (
 drop table if exists units;
 create table units (
   id serial primary key,
+  unit_num integer,
   building_id integer references buildings(id),
   floor integer
 );
